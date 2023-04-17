@@ -10,27 +10,42 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <a href="#"><img src="images/icon-profile.png" alt="Profile icon." /></a>
-      <a href="#"
-        ><img src="images/logo.png" alt="A dog's pawprint. Logo for Tindog."
-      /></a>
-      <a href="#"><img src="images/icon-chat.png" alt="Chat bubble icon." /></a>
-    </nav>
-    <main id="main">
-      <div id="dog-info"></div>
-      <div class="interact-buttons">
-        <button id="dislike-btn">
-          <img src="images/icon-cross.png" alt="Dislike dog." />
-        </button>
-        <button>
-          <img id="like-btn" src="images/icon-heart.png" alt="Like dog." />
-        </button>
-      </div>
-    </main>
+    <div class="container">
+      <nav>
+        <a href="#"
+          ><img
+            class="nav-icon"
+            src="images/icon-profile.png"
+            alt="Profile icon."
+        /></a>
+        <a href="#"
+          ><img
+            class="logo"
+            src="images/logo.png"
+            alt="A dog's pawprint. Logo for Tindog."
+        /></a>
+        <a href="#"
+          ><img
+            class="nav-icon"
+            src="images/icon-chat.png"
+            alt="Chat bubble icon."
+        /></a>
+      </nav>
+      <main id="main">
+        <div id="dog-info"></div>
+        <div class="interact-buttons">
+          <button class="interact-button" id="dislike-btn" type="button">
+            <img src="images/icon-cross.png" alt="Dislike dog." />
+          </button>
+          <button class="interact-button" id="like-btn">
+            <img id="like-btn" src="images/icon-heart.png" alt="Like dog." />
+          </button>
+        </div>
+      </main>
+    </div>
     <script src="/index.js" type="module"></script>
   </body>
 </html>

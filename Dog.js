@@ -9,9 +9,11 @@ class Dog {
     const { name, avatar, age, bio } = this;
 
     return `
-        <img src="${avatar}" alt="${name}'s avatar." />
-        <h2 class="dog-details">${name}, ${age}</h2>
-        <p class="dog-description">${bio}</p>
+        <img class="dog-avatar" src="${avatar}" alt="${name}'s avatar." />
+        <div class="dog-details">
+          <h2 class="dog-name-age">${name}, ${age}</h2>
+          <p class="dog-description">${bio}</p>
+        </div>
     `;
   }
 }

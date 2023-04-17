@@ -17,7 +17,7 @@ let dog = new Dog(remainingDogs[0]);
 
 render();
 
-document.getElementById("dislike-btn").addEventListener("click", () => {
+document.getElementById("dislike-btn").addEventListener("click", (e) => {
   remainingDogs.shift();
   dog = new Dog(remainingDogs[0]);
   render();
