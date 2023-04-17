@@ -41,6 +41,14 @@ img {
     left: 1em;
 }
 
+.dog-badge {
+    position: absolute;
+    width: 50%;
+    top: 3em;
+    left: .75em;
+    transform: rotate(-30deg);
+}
+
 .interact-buttons {
     display: flex;
     justify-content: center;
